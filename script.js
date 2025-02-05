@@ -40,6 +40,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
     
-    // Step 5: Invoke the addTask function on DOMContentLoaded (to demonstrate, let's add a sample task on load)
-    addTask();
+ 
+     addTask();
 });
