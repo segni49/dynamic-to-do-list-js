@@ -13,13 +13,15 @@ document.addEventListener('DOMContentLoaded', function () {
             return;
         }
         
-        // Task Creation and Removal
+         // Task Creation and Removal
         const li = document.createElement('li');
         li.textContent = taskText;
+        li.classList.add('task-item'); // Add class for task item styling
         
         const removeBtn = document.createElement('button');
         removeBtn.textContent = 'Remove';
         removeBtn.className = 'remove-btn';
+        removeBtn.classList.add('btn'); // Add class for button styling
         removeBtn.onclick = function () {
             taskList.removeChild(li);
         };
@@ -40,6 +42,4 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
     
- 
-     addTask();
-});
+  
